@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess game</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1 class="document-title">2-player Chess game</h1>
+        <section alt="player-info-and-deathbox">
+            <div class="player-info-box">
+                <h1 id="p1">Player 1 <span>(white)</span></spa></h1>
+                <h1 id="p2"><span id="player-color">(black)</span> Player 2 <span id="player-color-minimized">(black)</span></h1>
+            </div>
+            <div class="graveyard-box">
+                <div class="p1-graveyard">
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                    <div class="p1-grid-item"></div>
+                </div>
+                <div class="p2-graveyard">
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                    <div class="p2-grid-item"></div>
+                </div>
+            </div>
+        </section>
+        <section alt="chess-board-section">
+            <div class="chess-board">
+                <div class="file-a">
+                    <div class="square item-1 white"></div>
+                    <div class="square item-2 black"></div>
+                    <div class="square item-3 white"> </div>
+                    <div class="square item-4 black"></div>
+                    <div class="square item-5 white"></div>
+                    <div class="square item-6 black"></div>
+                    <div class="square item-7 white"></div>
+                    <div class="square item-8 black"></div>
+                </div>
+                <div class="file-b">
+                    <div class="square item-9 black"></div>
+                    <div class="square item-10 white"></div>
+                    <div class="square item-11 black"></div>
+                    <div class="square item-12 white"></div>
+                    <div class="square item-13 black"></div>
+                    <div class="square item-14 white"></div>
+                    <div class="square item-15 black"></div>
+                    <div class="square item-16 white"></div>
+                </div>
+                <div class="file-c">
+                    <div class="square item-17 white"></div>
+                    <div class="square item-18 black"></div>
+                    <div class="square item-19 white"></div>
+                    <div class="square item-20 black"></div>
+                    <div class="square item-21 white"></div>
+                    <div class="square item-22 black"></div>
+                    <div class="square item-23 white"></div>
+                    <div class="square item-24 black"></div>
+                </div>
+                 <div class="file-d">
+                    <div class="square item-25 black"></div>
+                    <div class="square item-26 white"></div>
+                    <div class="square item-27 black"></div>
+                    <div class="square item-28 white"></div>
+                    <div class="square item-29 black"></div>
+                    <div class="square item-30 white"></div>
+                    <div class="square item-31 black"></div>
+                    <div class="square item-32 white"></div>
+                 </div>
+                 <div class="file-e">
+                    <div class="square item-33 white"></div>
+                    <div class="square item-34 black"></div>
+                    <div class="square item-35 white"></div>
+                    <div class="square item-36 black"></div>
+                    <div class="square item-37 white"></div>
+                    <div class="square item-38 black"></div>
+                    <div class="square item-39 white"></div>
+                    <div class="square item-40 black"></div>
+                 </div>
+                 <div class="file-f">
+                    <div class="square item-41 black"></div>
+                    <div class="square item-42 white"></div>
+                    <div class="square item-43 black"></div>
+                    <div class="square item-44 white"></div>
+                    <div class="square item-45 black"></div>
+                    <div class="square item-46 white"></div>
+                    <div class="square item-47 black"></div>
+                    <div class="square item-48 white"></div>
+                 </div> 
+                 <div class="file-g">
+                    <div class="square item-49 white"></div>
+                    <div class="square item-50 black"></div>
+                    <div class="square item-51 white"></div>
+                    <div class="square item-52 black"></div>
+                    <div class="square item-53 white"></div>
+                    <div class="square item-54 black"></div>
+                    <div class="square item-55 white"></div>
+                    <div class="square item-56 black"></div>
+                 </div>
+                 <div class="file-h">
+                    <div class="square item-57 black"></div>
+                    <div class="square item-58 white"></div>
+                    <div class="square item-59 black"></div>
+                    <div class="square item-60 white"></div>
+                    <div class="square item-61 black"></div>
+                    <div class="square item-62 white"></div>
+                    <div class="square item-63 black"></div>
+                    <div class="square item-64 white"></div>
+                 </div>
+            </div>
+        </section>
+        <div class="test-grid">
+            <div></div>
+        </div>
+    </main>
+</body>
+</html>
